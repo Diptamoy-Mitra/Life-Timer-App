@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Lato:wght@100&family=Roboto:ital@1&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Aclonica', sans-serif;
+  ;
+}
+
+.background {
+  background-image: url("./images/mountain.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.container h1 {
+  font-size: 3rem;
+}
+
+.settings {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.settings .fa-cog {
+  font-size: 3rem;
+  color: aliceblue;
+}
+
+.settings-content {
+  display: flex;
+  gap: 1rem;
+
+}
+.settings-content input{
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+
+}
+.settings-content button{
+  padding: 0.5rem 1rem;
+  background-color: aquamarine;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+
+.hide{
+  display: none;
+}
+.time-container{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.time-container h2{
+  text-align: center;
+  line-height: 60px;
+  margin-top: 1rem;
+}
+.time-container div{
+  font-size: 2rem;
+  color: white;
+}
