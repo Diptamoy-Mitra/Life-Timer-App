@@ -37,7 +37,7 @@ const updateAge = () => {
   const currentDate = new Date();
   // console.log(currentDate)
   const dateDiff = currentDate - DateOfBirth;
-  const year = Math.floor((dateDiff) / (1000 * 3600 * 24 * 365));
+  const year = Math.floor((dateDiff) / (1000 * 3600 * 24 * 366));
   const month = Math.floor((dateDiff) / (1000 * 3600 * 24 * 365)) % 12;
   const day = Math.floor(dateDiff / (1000 * 60 * 60 * 24)) % 30;
   const hour = Math.floor(dateDiff / (1000 * 60 * 60)) % 24;
