@@ -57,10 +57,10 @@ const localStorageGetter = () => {
   const year = localStorage.getItem('year')
   const month = localStorage.getItem('month')
   const date = localStorage.getItem('date')
-  const hour = localStorage.getItem('hour')
-  const minute = localStorage.getItem('minute')
-  const second = localStorage.getItem('second')
-  if (year && month && date && hour && minute && second) {
+  // const hour = localStorage.getItem('hour')
+  // const minute = localStorage.getItem('minute')
+  // const second = localStorage.getItem('second')
+  if (year && month && date ) {
 
     // console.log(year,month,date,hour,minute,second)
     DateOfBirth = new Date(year, month, date, hour, minute, second)
@@ -95,9 +95,9 @@ const setDOBHandler = () => {
     localStorage.setItem('year', DateOfBirth.getFullYear());
     localStorage.setItem('month', DateOfBirth.getMonth());
     localStorage.setItem('date', DateOfBirth.getDate())
-    localStorage.setItem('hour', DateOfBirth.getHours())
-    localStorage.setItem('minute', DateOfBirth.getMinutes())
-    localStorage.setItem('second', DateOfBirth.getSeconds())
+    // localStorage.setItem('hour', DateOfBirth.getHours())
+    // localStorage.setItem('minute', DateOfBirth.getMinutes())
+    // localStorage.setItem('second', DateOfBirth.getSeconds())
 
 
   }
