@@ -63,7 +63,7 @@ const localStorageGetter = () => {
   if (year && month && date ) {
 
     // console.log(year,month,date,hour,minute,second)
-    DateOfBirth = new Date(year, month, date, hour, minute, second)
+    DateOfBirth = new Date(year, month, date)
   }
   updateAge();
 };
